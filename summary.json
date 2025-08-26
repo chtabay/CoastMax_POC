@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "zone": "Ariège, France",
+    "total_segments": 50,
+    "date_generated": "2024-12",
+    "description": "Meilleurs segments de roue libre en Ariège"
+  },
+  "records": {
+    "max_distance": {
+      "value": 6408.92271210396,
+      "unit": "mètres",
+      "segment_id": "9208118343-1079113464"
+    },
+    "max_speed": {
+      "value": 73.58307932091968,
+      "unit": "km/h",
+      "segment_id": "7130327542-1412221552"
+    }
+  },
+  "statistics": {
+    "distance_moyenne": 2685.070616903247,
+    "distance_mediane": 2445.1073009952793,
+    "vitesse_max_moyenne": 40.12792913898838,
+    "distance_min": 2141.371781766964,
+    "distance_max": 6408.92271210396
+  }
+}
