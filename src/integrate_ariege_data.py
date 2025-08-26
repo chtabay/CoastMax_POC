@@ -42,14 +42,14 @@ def integrate_ariege_into_france():
     # Mettre à jour les records nationaux si nécessaire
     if ariege_stats["max_distance"] > france_data["national_records"]["max_distance"]["value"]:
         france_data["national_records"]["max_distance"] = {
-            "value": ariege_stats["max_distance"],
+            "value": round(ariege_stats["max_distance"]),
             "region": "pyrenees",
             "segment_id": f"{ariege_data['top_distance'][0]['start_node']}-{ariege_data['top_distance'][0]['end_node']}"
         }
     
     if ariege_stats["max_speed"] > france_data["national_records"]["max_speed"]["value"]:
         france_data["national_records"]["max_speed"] = {
-            "value": ariege_stats["max_speed"],
+            "value": round(ariege_stats["max_speed"]),
             "region": "pyrenees", 
             "segment_id": f"{ariege_data['top_speed'][0]['start_node']}-{ariege_data['top_speed'][0]['end_node']}"
         }
@@ -85,9 +85,9 @@ def calculate_ariege_stats(ariege_data):
     
     return {
         "total_segments": len(segments),
-        "max_distance": max(distances) if distances else 0,
-        "max_speed": max(speeds) if speeds else 0,
-        "avg_distance": sum(distances) / len(distances) if distances else 0,
+        "max_distance": round(max(distances)) if distances else 0,
+        "max_speed": round(max(speeds)) if speeds else 0,
+        "avg_distance": round(sum(distances) / len(distances)) if distances else 0,
         "last_updated": "2024-12"
     }
 
