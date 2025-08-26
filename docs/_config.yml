@@ -1,0 +1,41 @@
+# Configuration GitHub Pages pour CoastMax
+title: "CoastMax - Parcours de roue libre en Ariège"
+description: "Découvrez les meilleurs segments de roue libre dans les Pyrénées ariégeoises"
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Configuration du site
+baseurl: ""
+url: "https://USERNAME.github.io"  # À remplacer par votre URL GitHub Pages
+
+# Métadonnées
+author:
+  name: "CoastMax Project"
+  email: "contact@coastmax.com"
+
+# Navigation
+navigation:
+  - title: "Accueil"
+    url: "/"
+  - title: "Carte interactive"
+    url: "/index.html"
+
+# Paramètres
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Exclusions
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
