@@ -375,18 +375,18 @@
             }
         }
         
-        function updateStats() {
-            if (!franceData) return;
-            
-            document.getElementById('total-regions').textContent = 
-                franceData.metadata.total_regions;
-            document.getElementById('total-segments').textContent = 
-                Object.values(franceData.regions).reduce((sum, region) => sum + region.stats.total_segments, 0);
-            document.getElementById('max-distance').textContent = 
-                franceData.national_records.max_distance.value + 'm';
-            document.getElementById('max-speed').textContent = 
-                franceData.national_records.max_speed.value + ' km/h';
-        }
+                 function updateStats() {
+             if (!franceData) return;
+             
+             document.getElementById('total-regions').textContent = 
+                 franceData.metadata.total_regions;
+             document.getElementById('total-segments').textContent = 
+                 Object.values(franceData.regions).reduce((sum, region) => sum + region.stats.total_segments, 0);
+             document.getElementById('max-distance').textContent = 
+                 Math.round(franceData.national_records.max_distance.value) + 'm';
+             document.getElementById('max-speed').textContent = 
+                 Math.round(franceData.national_records.max_speed.value) + ' km/h';
+         }
         
         function displayRegions() {
             const container = document.getElementById('regions-grid');
@@ -397,16 +397,16 @@
                 regionCard.className = `region-card ${key}`;
                 regionCard.dataset.region = key;
                 
-                regionCard.innerHTML = `
-                    <div class="region-name">${region.config.display_name}</div>
-                    <div class="region-stats">
-                        <div>📏 ${region.stats.max_distance}m</div>
-                        <div>⚡ ${region.stats.max_speed} km/h</div>
-                        <div>🏔️ ${region.stats.total_segments} segments</div>
-                        <div>📊 ${region.stats.avg_distance}m moy</div>
-                    </div>
-                    <div class="region-description">${region.config.description}</div>
-                `;
+                                 regionCard.innerHTML = `
+                     <div class="region-name">${region.config.display_name}</div>
+                     <div class="region-stats">
+                         <div>📏 ${Math.round(region.stats.max_distance)}m</div>
+                         <div>⚡ ${Math.round(region.stats.max_speed)} km/h</div>
+                         <div>🏔️ ${region.stats.total_segments} segments</div>
+                         <div>📊 ${Math.round(region.stats.avg_distance)}m moy</div>
+                     </div>
+                     <div class="region-description">${region.config.description}</div>
+                 `;
                 
                 regionCard.addEventListener('click', () => {
                     zoomToRegion(key);
@@ -431,18 +431,18 @@
                     fillOpacity: 0.2
                 });
                 
-                rectangle.bindPopup(`
-                    <div style="min-width: 200px;">
-                        <h3>${region.config.display_name}</h3>
-                        <p><strong>Segments:</strong> ${region.stats.total_segments}</p>
-                        <p><strong>Distance max:</strong> ${region.stats.max_distance}m</p>
-                        <p><strong>Vitesse max:</strong> ${region.stats.max_speed} km/h</p>
-                        <p><strong>Description:</strong> ${region.config.description}</p>
-                        <button onclick="zoomToRegion('${key}')" style="margin-top: 10px; padding: 5px 10px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer;">
-                            Explorer cette région
-                        </button>
-                    </div>
-                `);
+                                 rectangle.bindPopup(`
+                     <div style="min-width: 200px;">
+                         <h3>${region.config.display_name}</h3>
+                         <p><strong>Segments:</strong> ${region.stats.total_segments}</p>
+                         <p><strong>Distance max:</strong> ${Math.round(region.stats.max_distance)}m</p>
+                         <p><strong>Vitesse max:</strong> ${Math.round(region.stats.max_speed)} km/h</p>
+                         <p><strong>Description:</strong> ${region.config.description}</p>
+                         <button onclick="zoomToRegion('${key}')" style="margin-top: 10px; padding: 5px 10px; background: #667eea; color: white; border: none; border-radius: 4px; cursor: pointer;">
+                             Explorer cette région
+                         </button>
+                     </div>
+                 `);
                 
                 regionLayers[key] = rectangle;
                 rectangle.addTo(map);
