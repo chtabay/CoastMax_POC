@@ -1,0 +1,22 @@
+{
+  "name": "alpes",
+  "display_name": "Alpes",
+  "bounds": [
+    5.0,
+    44.0,
+    7.5,
+    46.5
+  ],
+  "center": [
+    45.2,
+    6.2
+  ],
+  "zoom": 8,
+  "color": "#ff6b6b",
+  "description": "Massif alpin - cols légendaires et descentes épiques",
+  "data_files": {
+    "segments": "alpes_segments.geojson",
+    "stats": "alpes_stats.json",
+    "top_segments": "alpes_top.json"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "levels": {
+    "france": {
+      "name": "Vue France",
+      "description": "Vue d'ensemble nationale avec heatmap des régions",
+      "features": [
+        "Carte France avec régions colorées",
+        "Top 20 national",
+        "Statistiques comparatives",
+        "Recherche par région"
+      ]
+    },
+    "region": {
+      "name": "Vue Régionale",
+      "description": "Zoom sur une région avec segments détaillés",
+      "features": [
+        "Carte régionale détaillée",
+        "Liste des segments avec filtres",
+        "Comparaison inter-régions",
+        "Statistiques régionales"
+      ]
+    },
+    "segment": {
+      "name": "Vue Segment",
+      "description": "Détail d'un segment avec profil et simulation",
+      "features": [
+        "Profil d'altitude interactif",
+        "Simulation physique temps réel",
+        "Export GPX/TCX",
+        "Comparaison avec segments similaires"
+      ]
+    }
+  },
+  "navigation": {
+    "france_to_region": "Clic sur région → zoom automatique",
+    "region_to_segment": "Clic sur segment → détail complet",
+    "breadcrumb": "France > Région > Segment"
+  }
+}

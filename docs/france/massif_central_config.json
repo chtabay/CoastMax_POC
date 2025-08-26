@@ -1,0 +1,22 @@
+{
+  "name": "massif_central",
+  "display_name": "Massif Central",
+  "bounds": [
+    1.5,
+    44.5,
+    4.5,
+    46.0
+  ],
+  "center": [
+    45.2,
+    3.0
+  ],
+  "zoom": 8,
+  "color": "#45b7d1",
+  "description": "Massif central - volcans éteints et plateaux",
+  "data_files": {
+    "segments": "massif_central_segments.geojson",
+    "stats": "massif_central_stats.json",
+    "top_segments": "massif_central_top.json"
+  }
+}

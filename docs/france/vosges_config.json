@@ -1,0 +1,22 @@
+{
+  "name": "vosges",
+  "display_name": "Vosges",
+  "bounds": [
+    6.0,
+    47.5,
+    8.0,
+    49.0
+  ],
+  "center": [
+    48.2,
+    7.0
+  ],
+  "zoom": 9,
+  "color": "#feca57",
+  "description": "Massif des Vosges - forêts et sommets arrondis",
+  "data_files": {
+    "segments": "vosges_segments.geojson",
+    "stats": "vosges_stats.json",
+    "top_segments": "vosges_top.json"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "jura",
+  "display_name": "Jura",
+  "bounds": [
+    5.0,
+    46.0,
+    7.0,
+    47.5
+  ],
+  "center": [
+    46.7,
+    6.0
+  ],
+  "zoom": 9,
+  "color": "#96ceb4",
+  "description": "Massif du Jura - reliefs doux et lacs",
+  "data_files": {
+    "segments": "jura_segments.geojson",
+    "stats": "jura_stats.json",
+    "top_segments": "jura_top.json"
+  }
+}

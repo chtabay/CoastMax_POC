@@ -1,0 +1,22 @@
+{
+  "name": "corse",
+  "display_name": "Corse",
+  "bounds": [
+    8.5,
+    41.5,
+    9.5,
+    43.0
+  ],
+  "center": [
+    42.2,
+    9.0
+  ],
+  "zoom": 9,
+  "color": "#ff9ff3",
+  "description": "Île de Beauté - montagnes dans la mer",
+  "data_files": {
+    "segments": "corse_segments.geojson",
+    "stats": "corse_stats.json",
+    "top_segments": "corse_top.json"
+  }
+}

@@ -1,0 +1,377 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "generated": "2024-12",
+    "description": "CoastMax France - Meilleurs parcours de roue libre",
+    "total_regions": 6
+  },
+  "france_overview": {
+    "bounds": [
+      2.0,
+      41.0,
+      8.5,
+      51.0
+    ],
+    "center": [
+      46.0,
+      2.0
+    ],
+    "zoom": 6
+  },
+  "regions": {
+    "alpes": {
+      "config": {
+        "display_name": "Alpes",
+        "bounds": [
+          5.0,
+          44.0,
+          7.5,
+          46.5
+        ],
+        "center": [
+          45.2,
+          6.2
+        ],
+        "zoom": 8,
+        "color": "#ff6b6b",
+        "description": "Massif alpin - cols légendaires et descentes épiques"
+      },
+      "stats": {
+        "total_segments": 0,
+        "max_distance": 0,
+        "max_speed": 0,
+        "avg_distance": 0,
+        "last_updated": null
+      },
+      "segments": []
+    },
+    "pyrenees": {
+      "config": {
+        "display_name": "Pyrénées",
+        "bounds": [
+          -1.5,
+          42.0,
+          3.0,
+          43.5
+        ],
+        "center": [
+          42.8,
+          1.0
+        ],
+        "zoom": 8,
+        "color": "#4ecdc4",
+        "description": "Chaîne pyrénéenne - cols mythiques et vallées sauvages"
+      },
+      "stats": {
+        "total_segments": 19,
+        "max_distance": 6408.92271210396,
+        "max_speed": 73.58307932091968,
+        "avg_distance": 3166.714747626305,
+        "last_updated": "2024-12"
+      },
+      "segments": [
+        {
+          "id": "9208118343-1079113464",
+          "start_node": 9208118343,
+          "end_node": 1079113464,
+          "start_coords": [
+            1.7401314000000003,
+            42.696695399999996
+          ],
+          "end_coords": [
+            1.7500729229188607,
+            42.74712567919146
+          ],
+          "coast_distance_m": 6408.92271210396,
+          "v_max_kmh": 38.96033146834567,
+          "v_out_kmh": 26.87855339879137,
+          "time_min": 14.220406456498473,
+          "length_m": 6474.891292763092
+        },
+        {
+          "id": "2325961053-5842308904",
+          "start_node": 2325961053,
+          "end_node": 5842308904,
+          "start_coords": [
+            1.4622062000000005,
+            42.77816489999999
+          ],
+          "end_coords": [
+            1.4219017017730549,
+            42.79109406434043
+          ],
+          "coast_distance_m": 4007.1843398937876,
+          "v_max_kmh": 39.58931862340223,
+          "v_out_kmh": 36.83981667757173,
+          "time_min": 8.687304375519501,
+          "length_m": 4057.00362515929
+        },
+        {
+          "id": "2141478483-2141482631",
+          "start_node": 2141478483,
+          "end_node": 2141482631,
+          "start_coords": [
+            1.5916661000000003,
+            42.69209009999999
+          ],
+          "end_coords": [
+            1.5748667339393214,
+            42.71425060904817
+          ],
+          "coast_distance_m": 3740.734696187047,
+          "v_max_kmh": 40.293154703621134,
+          "v_out_kmh": 28.00434331912357,
+          "time_min": 8.207120473542904,
+          "length_m": 3763.798885317474
+        },
+        {
+          "id": "8008978411-824514323",
+          "start_node": 8008978411,
+          "end_node": 824514323,
+          "start_coords": [
+            1.7345712000000006,
+            42.67273459999999
+          ],
+          "end_coords": [
+            1.7177927156445847,
+            42.69926959904409
+          ],
+          "coast_distance_m": 3737.2888815391098,
+          "v_max_kmh": 39.99836715453923,
+          "v_out_kmh": 29.23065286979088,
+          "time_min": 7.942617061698429,
+          "length_m": 3785.5654937405156
+        },
+        {
+          "id": "1416927982-1809372521",
+          "start_node": 1416927982,
+          "end_node": 1809372521,
+          "start_coords": [
+            1.5609021000000003,
+            42.708894199999996
+          ],
+          "end_coords": [
+            1.5524874149843895,
+            42.73371301978307
+          ],
+          "coast_distance_m": 3687.0443248713555,
+          "v_max_kmh": 39.58920412774767,
+          "v_out_kmh": 0.0,
+          "time_min": 10.683059148573879,
+          "length_m": 4431.096761943123
+        },
+        {
+          "id": "2327023425-9208090215",
+          "start_node": 2327023425,
+          "end_node": 9208090215,
+          "start_coords": [
+            1.7617619000000002,
+            42.72471019999998
+          ],
+          "end_coords": [
+            1.761819768522009,
+            42.749642493118486
+          ],
+          "coast_distance_m": 3443.1081279710756,
+          "v_max_kmh": 31.9882427017216,
+          "v_out_kmh": 0.0,
+          "time_min": 9.238901729966555,
+          "length_m": 4965.088319751308
+        },
+        {
+          "id": "2294743109-1822331467",
+          "start_node": 2294743109,
+          "end_node": 1822331467,
+          "start_coords": [
+            1.4917532999999998,
+            42.72607459999999
+          ],
+          "end_coords": [
+            1.4839920984709651,
+            42.749295095603756
+          ],
+          "coast_distance_m": 3345.4941049562267,
+          "v_max_kmh": 38.328481529349084,
+          "v_out_kmh": 0.0,
+          "time_min": 8.4422880209936,
+          "length_m": 4124.450755490775
+        },
+        {
+          "id": "2132597179-2132597958",
+          "start_node": 2132597179,
+          "end_node": 2132597958,
+          "start_coords": [
+            1.7362516000000001,
+            42.644869099999994
+          ],
+          "end_coords": [
+            1.7447422932498293,
+            42.66898903705368
+          ],
+          "coast_distance_m": 3228.8970732435787,
+          "v_max_kmh": 41.95085024390313,
+          "v_out_kmh": 34.65828477810891,
+          "time_min": 6.25534444042328,
+          "length_m": 3270.893127603063
+        },
+        {
+          "id": "473808060-12190011497",
+          "start_node": 473808060,
+          "end_node": 12190011497,
+          "start_coords": [
+            2.0777131999999994,
+            42.746568599999996
+          ],
+          "end_coords": [
+            2.0461802603495522,
+            42.74691881258671
+          ],
+          "coast_distance_m": 3172.829905676747,
+          "v_max_kmh": 42.879702557641615,
+          "v_out_kmh": 27.8084941995681,
+          "time_min": 7.09395996690863,
+          "length_m": 3185.0385809304266
+        },
+        {
+          "id": "6564393932-6564401675",
+          "start_node": 6564393932,
+          "end_node": 6564401675,
+          "start_coords": [
+            1.2517920000000002,
+            43.06815499999999
+          ],
+          "end_coords": [
+            1.223226063630019,
+            43.07061604261887
+          ],
+          "coast_distance_m": 3080.168220096125,
+          "v_max_kmh": 45.31452791143058,
+          "v_out_kmh": 26.073113691066226,
+          "time_min": 6.754296346085043,
+          "length_m": 3101.38767381917
+        }
+      ]
+    },
+    "massif_central": {
+      "config": {
+        "display_name": "Massif Central",
+        "bounds": [
+          1.5,
+          44.5,
+          4.5,
+          46.0
+        ],
+        "center": [
+          45.2,
+          3.0
+        ],
+        "zoom": 8,
+        "color": "#45b7d1",
+        "description": "Massif central - volcans éteints et plateaux"
+      },
+      "stats": {
+        "total_segments": 0,
+        "max_distance": 0,
+        "max_speed": 0,
+        "avg_distance": 0,
+        "last_updated": null
+      },
+      "segments": []
+    },
+    "jura": {
+      "config": {
+        "display_name": "Jura",
+        "bounds": [
+          5.0,
+          46.0,
+          7.0,
+          47.5
+        ],
+        "center": [
+          46.7,
+          6.0
+        ],
+        "zoom": 9,
+        "color": "#96ceb4",
+        "description": "Massif du Jura - reliefs doux et lacs"
+      },
+      "stats": {
+        "total_segments": 0,
+        "max_distance": 0,
+        "max_speed": 0,
+        "avg_distance": 0,
+        "last_updated": null
+      },
+      "segments": []
+    },
+    "vosges": {
+      "config": {
+        "display_name": "Vosges",
+        "bounds": [
+          6.0,
+          47.5,
+          8.0,
+          49.0
+        ],
+        "center": [
+          48.2,
+          7.0
+        ],
+        "zoom": 9,
+        "color": "#feca57",
+        "description": "Massif des Vosges - forêts et sommets arrondis"
+      },
+      "stats": {
+        "total_segments": 0,
+        "max_distance": 0,
+        "max_speed": 0,
+        "avg_distance": 0,
+        "last_updated": null
+      },
+      "segments": []
+    },
+    "corse": {
+      "config": {
+        "display_name": "Corse",
+        "bounds": [
+          8.5,
+          41.5,
+          9.5,
+          43.0
+        ],
+        "center": [
+          42.2,
+          9.0
+        ],
+        "zoom": 9,
+        "color": "#ff9ff3",
+        "description": "Île de Beauté - montagnes dans la mer"
+      },
+      "stats": {
+        "total_segments": 0,
+        "max_distance": 0,
+        "max_speed": 0,
+        "avg_distance": 0,
+        "last_updated": null
+      },
+      "segments": []
+    }
+  },
+  "national_records": {
+    "max_distance": {
+      "value": 6408.92271210396,
+      "region": "pyrenees",
+      "segment_id": "9208118343-1079113464"
+    },
+    "max_speed": {
+      "value": 73.58307932091968,
+      "region": "pyrenees",
+      "segment_id": "7130327542-1412221552"
+    },
+    "longest_route": {
+      "value": 0,
+      "region": null,
+      "route_id": null
+    }
+  }
+}

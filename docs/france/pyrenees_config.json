@@ -1,0 +1,22 @@
+{
+  "name": "pyrenees",
+  "display_name": "Pyrénées",
+  "bounds": [
+    -1.5,
+    42.0,
+    3.0,
+    43.5
+  ],
+  "center": [
+    42.8,
+    1.0
+  ],
+  "zoom": 8,
+  "color": "#4ecdc4",
+  "description": "Chaîne pyrénéenne - cols mythiques et vallées sauvages",
+  "data_files": {
+    "segments": "pyrenees_segments.geojson",
+    "stats": "pyrenees_stats.json",
+    "top_segments": "pyrenees_top.json"
+  }
+}
