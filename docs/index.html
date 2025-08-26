@@ -49,21 +49,28 @@
             align-items: center;
         }
         
-        .nav-btn {
-            background: rgba(255,255,255,0.2);
-            border: 1px solid rgba(255,255,255,0.3);
-            color: white;
-            padding: 8px 16px;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 0.9em;
-        }
-        
-        .nav-btn:hover, .nav-btn.active {
-            background: rgba(255,255,255,0.3);
-            transform: translateY(-1px);
-        }
+                 .nav-btn {
+             background: rgba(255,255,255,0.2);
+             border: 1px solid rgba(255,255,255,0.3);
+             color: white;
+             padding: 8px 16px;
+             border-radius: 20px;
+             cursor: pointer;
+             transition: all 0.3s ease;
+             font-size: 0.9em;
+             min-width: 40px;
+             text-align: center;
+         }
+         
+         .nav-btn:hover, .nav-btn.active {
+             background: rgba(255,255,255,0.3);
+             transform: translateY(-1px);
+         }
+         
+         .nav-btn:active {
+             transform: translateY(0);
+             background: rgba(255,255,255,0.4);
+         }
         
         .container {
             display: flex;
@@ -486,20 +493,26 @@
             `;
         }
         
-        function setupEventListeners() {
-            // Toggle sidebar mobile
-            document.getElementById('mobile-toggle').addEventListener('click', function() {
-                const sidebar = document.getElementById('sidebar');
-                sidebar.classList.toggle('collapsed');
-            });
-            
-            // Double-clic sur la carte pour revenir à la vue France
-            map.on('dblclick', function() {
-                if (currentLevel === 'region') {
-                    resetToFranceView();
-                }
-            });
-        }
+                 function setupEventListeners() {
+             // Toggle sidebar mobile
+             document.getElementById('mobile-toggle').addEventListener('click', function() {
+                 const sidebar = document.getElementById('sidebar');
+                 sidebar.classList.toggle('collapsed');
+             });
+             
+             // Toggle sidebar desktop (bouton en haut à droite)
+             document.getElementById('toggle-sidebar').addEventListener('click', function() {
+                 const sidebar = document.getElementById('sidebar');
+                 sidebar.classList.toggle('collapsed');
+             });
+             
+             // Double-clic sur la carte pour revenir à la vue France
+             map.on('dblclick', function() {
+                 if (currentLevel === 'region') {
+                     resetToFranceView();
+                 }
+             });
+         }
         
         function resetToFranceView() {
             currentLevel = 'france';
